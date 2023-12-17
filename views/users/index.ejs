@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document What</title>
+</head>
+<body>
+    <h1>Some Users Heared</h1>
+    Hello <%= locals.users || 'Default' %>
+    <table>
+        <% for(var i=0; i < locals.users.length; i++) { %>
+            <tr>
+                <td><%= users[i].firstName %></td>
+            </tr>
+        <% } %>
+    </table>
+
+</body>
+</html>
